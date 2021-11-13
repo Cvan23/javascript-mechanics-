@@ -8,7 +8,8 @@
 // *Step 5: Inside FOR LOOP take strArr index and set to .substring method (used to pluck out 1st char out of each string *pass in 0-1 in argument*)
 // *Step 6: Chain .toUppercase method to .substring to caplitalize 1st char
 // *Step 7: Concatinate the rest of the word to the 1st char (0 index), pass in index position 1 as the argument
-// *Step 8: Return strArr using .join method to convert from arr to str, *NOTE* make sure to put a space in empty str argument to designate each word and not each char is it's own index value
+// *Step 8: Return strArr using .join method to convert from arr to str, 
+// *NOTE* make sure to put a space in empty str argument to designate each word and not each char is it's own index value
 
 function capLetters(str) {  //*Steps 1 - 3 ↓
   const strArr = str.toLowerCase().split(' ');
