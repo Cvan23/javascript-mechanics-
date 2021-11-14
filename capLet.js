@@ -22,7 +22,31 @@ function capLetters(str) {  //*Steps 1 - 3 ↓
   return strArr.join(' ');    //*Step 8
 };
 
-const output = capLetters('i love koa bear');
+// MAP SOLUTION to this problem (A more modern technique using a High Order Array function)
+
+// *Steps 1 & 2: Return str using .toLowerCase
+// *Step 3: Use .split method to split into array (don't forget to add a space inside empty string *see *NOTE* on line 12*)
+// *Step 4: Use .map (which can manipulate array and return another array)
+// *Step 5: Create function inside .map param
+// *Step 5a: Pass in (word) as argument of function
+// *Step 5b: Return 1st index value of WORD (0 idx)
+// *Step 5c: Use .toUpperCase to capitalize first char of string
+// *Step 5d: Concatinate SUBSTRING method onto WORD (passing in index value 2(which is 1))
+// *Step 6: Add .join method to turn back into string (OUTSIDE of .map function)
+// *NOTE* make sure to put a space in empty str argument to designate each word and not each char is it's own index value
+
+function capLet(str) {
+  return str  //*Step 1
+    .toLowerCase()  //*Step 2
+    .split(' ')  //*Step 3
+    .map(function(word) { //*Steps 4-5d
+      return word[0].toUpperCase() + word.substring(1);
+    })
+    .join(' '); //*Step 6
+
+}
+
+const output = capLet('i love koa bear');
 // Expected output: 'I Love Koa Bear'
 
 console.log(output);

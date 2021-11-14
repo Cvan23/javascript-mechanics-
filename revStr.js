@@ -8,7 +8,8 @@
 
 function revString(str) {
   let newString = ""; // *Step 1
-  // *Step 2
+
+      // *Step 2 ↓
   for(let i = str.length - 1; i >= 0; i--) {
     newString +=str[i];
   }
@@ -17,6 +18,7 @@ function revString(str) {
 revString('mycatrules'); // Expected output: selurtacym
 
 // Using ES6 FOR OF method - more notes on this coming soon
+// Benefits of this method: Less room for error inside params of FOR LOOP
 
 function revStr(str) {
   let reversed = "";
