@@ -44,7 +44,7 @@ function capLet(str) {
     })
     .join(' '); //*Step 6
 
-}
+};
 
 const output = capLet('i love koa bear');
 // Expected output: 'I Love Koa Bear'
