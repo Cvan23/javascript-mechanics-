@@ -8,11 +8,11 @@
 // *Step 4a: Pass in function as FOR EACH param
 // *Step 4b: Pass in CHAR into function param
 // *Step 5:  Use IF statement (we need to look for key/value pairs)
-// *IE*: Each char represents a key, the number of occurrences is the value **'java' : 'j' would have a value of 1, 'a' would have value of 2**
+// *IE*: Each char represents a key, the number of occurrences is the value **'java' ('j' would have a value of 1, 'a' would have value of 2)**
 // *Step 5a: Pass in charMap (grabbing 'char') as argument for IF statement (checks to see if char exists)
 // *Step 5b: Inside IF block: Add one to existing 'char' using ++ (incrementing operator)
 // *Step 5c: Inside of ELSE block: set charMap to 1
-// *NOTE*: Using the word 'java' as example - line  will set 'j' to 1, 'a' to 1, 'v' to 1 and line  would set second 'a' to 2
+// *NOTE*: Using the word 'java' as example - line 36  will set 'j' to 1, 'a' to 1, 'v' to 1 and line 34  would set second 'a' to 2
 // *Step 6: Use FOR IN loop (used to loop through objects instead of arrays) to return highest value char
 // *Step 6a: Use let keyword to set variable of char
 // *Step 7-8: Set 2 new vars outside of all inner functions (must use LET keyword since values will be redefined)
