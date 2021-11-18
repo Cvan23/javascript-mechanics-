@@ -11,7 +11,7 @@ function addAll() { //*Step 1 ↓
   const args = Array.prototype.slice.call(arguments);
   let total = 0;  //*Step 2
     //*Step 3 ↓
-  for(i = 0; i < args.length; i++) {
+  for( let i = 0; i < args.length; i++) {
     total += args[i]; //*Step 4
   }
   return total; //*Step 5
