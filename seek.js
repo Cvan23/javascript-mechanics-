@@ -24,7 +24,21 @@ function seekAndDest(arr) {
   return arr.filter(filterArr);
 };
 
-const output = seekAndDest([2,3,4,6,6, 'hello'], 2,6);
+// Solution Two: rest OP, filter & includes method
+
+// Step 1: Pass in array, as well as the rest of the params (using ...rest(rest OP)) into the argument of the main function
+// Step 2: Return filtered array (whatever is TRUE will stay in array)
+// Step 2a: Inside filter param pass in val function
+// Step 2b: Use NOT OP (!) to return TRUE value if NOT in array
+// Step 2c: Pass VAL into INCLUDES param
+
+                // Step 1 ↓
+function seekAndDestroy(arr, ...rest) {
+//Steps 2↓          2a↓  2b↓            2c↓
+  return arr.filter(val => !rest.includes(val));
+};
+
+const output = seekAndDestroy([2,3,4,6,6, 'hello'], 2,6);
 // Expected output: [3,4,'hello']
 
 console.log(output);
