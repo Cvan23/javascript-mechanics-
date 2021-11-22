@@ -23,13 +23,15 @@ const inventors = [
 // Step 2: Filter over INVENTORS object w/.filter method
 // Step 2a: Pass in fucntion to loop over each INVENTOR in the array (we can use arrow function)
 // Step 3: Inside function create IF statement
-// Step 4a: Inside IF statement param: If the inventor's year is >= 1500
-// Step 4b: Next, still inside IF param: use LOGICAL AND OP (&&) to check if inventor's year is less than 1600
+// Step 4: Inside IF statement param: If the inventor's year is >= 1500
+// Step 4a: Next, still inside IF param: use LOGICAL AND OP (&&) to check if inventor's year is less than 1600
 // Step 5: Return TRUE
 
+  //*1 ↓            *2 ↓            *2a ↓
 const fifteen = inventors.filter(inventor => {
+  //*3 ↓     *4 ↓           *4a ↓
   if(inventor.year >= 1500 && inventor.year < 1600) {
-    return true;
+    return true; //*5
   }
 });
 
