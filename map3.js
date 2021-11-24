@@ -24,7 +24,7 @@ const inventors = [
 // Step 2: Map over INVENTORS array with .map method
 // Step 3: Inside INVENTORS param create inventor function (can use => function)
 // Step 3a: Map over first names using dot notation
-// Step 3b: Use CONCAT to also map over last names using dot notation
+// Step 3b: Use CONCAT (plus symbol) to also map over last names using dot notation
 // Step 3c: We need to use CONCAT to add an empty space to the names in order to display data correctly
 // Optional Step 4: Use TEMPLATE STRING `${inventor.first}` instead of CONCAT method
 
